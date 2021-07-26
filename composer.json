@@ -1,0 +1,44 @@
+{
+  "name": "bernskioldmedia/bm-concierge",
+  "description": "Our help at your fingertips. BM Concierge lets you easily access content and assistive service for your site, right from the dashboard.",
+  "type": "wordpress-plugin",
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "bernskioldmedia/wp-plugin-base": "^2.3.0",
+    "composer/installers": "~1.0",
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "bernskioldmedia/phpcs-wordpress": "dev-master"
+  },
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Bernskiold Media",
+      "email": "info@bernskioldmedia.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BernskioldMedia\\WP\\Concierge\\": "src/"
+    },
+    "classmap": [
+      "vendor_prefixed/"
+    ]
+  },
+  "scripts": {
+    "build": [
+      "composer prefix-dependencies",
+      "composer dump-autoload"
+    ],
+    "prefix-dependencies": [
+      "composer require humbug/php-scoper:dev-master --dev -W",
+      "php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=WPPS_Vendor --config config/php-scoper/bm-wp-plugin-base.php --output-dir vendor_prefixed/bernskioldmedia/wp-plugin-base --force",
+      "composer remove humbug/php-scoper --dev"
+    ]
+  }
+}

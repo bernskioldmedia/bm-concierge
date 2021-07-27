@@ -50,7 +50,7 @@ export default function OnPage() {
 						type: 'onpage',
 						express: isExpress,
 						price,
-						keyword
+						keyword,
 					} );
 				} }
 			>
@@ -59,6 +59,7 @@ export default function OnPage() {
 				<hr style={ { margin: '16px 0 24px 0' } } />
 				<TextControl
 					label={ __( 'Target Search Keyword', 'bm-concierge' ) }
+					onChange={ setKeyword }
 					help={ __( 'We need to know what search keyword you want your page to rank for in Google. We\ll check to make sure that it is reasonable before we do the optimization.', 'bm-concierge' ) }
 				/>
 				<ToggleControl

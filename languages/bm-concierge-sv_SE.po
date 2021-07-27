@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BM Concierge 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bm-concierge\n"
-"POT-Creation-Date: 2021-07-27T15:30:57+00:00\n"
-"PO-Revision-Date: 2021-07-27 17:31+0200\n"
+"POT-Creation-Date: 2021-07-27T17:52:51+00:00\n"
+"PO-Revision-Date: 2021-07-27 19:52+0200\n"
 "Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -37,12 +37,66 @@ msgstr ""
 "dashboarden."
 
 #. Author of the plugin
+#: src/Services/BaseService.php:108
 msgid "Bernskiold Media"
 msgstr "Bernskiold Media"
 
-#: src/Services/BaseService.php:56
-msgid "Concierge Order Confirmation"
-msgstr "Beställningsbekräftelse från Concierge"
+#: src/Services/AccessibilityReview.php:11
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:33
+msgid "Accessibility Audit"
+msgstr "Tillgänglighetsanalys"
+
+#: src/Services/BaseService.php:81
+msgid "Your Concierge Order Confirmation"
+msgstr "Din beställningsbekräftelse för BM Concierge"
+
+#: src/Services/BaseService.php:88
+msgid "Hi %s,"
+msgstr "Hej %s,"
+
+#: src/Services/BaseService.php:90
+msgid "Thanks for using Bernskiold Media Concierge."
+msgstr "Tack för att du använder Bernskiold Media Concierge."
+
+#: src/Services/BaseService.php:92
+msgid ""
+"We have received your order for %1$s for \"%2$s\" on %3$s. As soon as it is "
+"ready, we will let you know."
+msgstr ""
+"Vi har mottagit din beställning på %1$s för \"%2$s\" på %3$s. Vi meddelar "
+"dig så snart den är klar."
+
+#: src/Services/BaseService.php:97
+msgid "You've selected express delivery for this job."
+msgstr "Du har valt expressleverans för det här jobbet."
+
+#: src/Services/BaseService.php:101
+msgid "You've selected standard delivery for this job."
+msgstr "Du har valt standardleverans för det här jobbet."
+
+#: src/Services/BaseService.php:105
+msgid ""
+"The price for your concierge job will be %s, and will be invoiced separately."
+msgstr "Priset för ditt conciergejobb är %s och faktureras separat."
+
+#: src/Services/BaseService.php:107
+msgid "Best Regards,"
+msgstr "Med vänliga hälsningar,"
+
+#: src/Services/Layout.php:11 assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:42
+msgid "Layout"
+msgstr "Layout"
+
+#: src/Services/OnPageOptimization.php:11
+msgid "On-Page SEO Optimization"
+msgstr "On-page SEO-optimering"
+
+#: src/Services/Proofreading.php:11 assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:39
+msgid "Proofreading"
+msgstr "Korrekturläsning"
 
 #: assets/scripts/dist/block-editor.js:1
 #: assets/scripts/src/components/concierge-panel.js:26
@@ -55,24 +109,9 @@ msgstr ""
 "och din webbplats så bra som möjligt."
 
 #: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:33
-msgid "Accessibility Audit"
-msgstr "Tillgänglighetsanalys"
-
-#: assets/scripts/dist/block-editor.js:1
 #: assets/scripts/src/components/concierge-panel.js:36
 msgid "SEO Optimization"
 msgstr "SEO-optimering"
-
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:39
-msgid "Proofreading"
-msgstr "Korrekturläsning"
-
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:42
-msgid "Layout"
-msgstr "Layout"
 
 #: assets/scripts/dist/block-editor.js:1
 #: assets/scripts/src/components/concierge-panel.js:46
@@ -207,7 +246,7 @@ msgstr ""
 #: assets/scripts/dist/block-editor.js:1
 #: assets/scripts/src/components/panels/accessibility-review.js:59
 #: assets/scripts/src/components/panels/layout.js:59
-#: assets/scripts/src/components/panels/onpage.js:65
+#: assets/scripts/src/components/panels/onpage.js:66
 #: assets/scripts/src/components/panels/proofreading.js:59
 msgid "Express Delivery (%s)"
 msgstr "Expressleverans (%s)"
@@ -225,7 +264,7 @@ msgstr "Utan express får du analysen inom 72 timmar."
 #: assets/scripts/dist/block-editor.js:1
 #: assets/scripts/src/components/panels/accessibility-review.js:64
 #: assets/scripts/src/components/panels/layout.js:64
-#: assets/scripts/src/components/panels/onpage.js:70
+#: assets/scripts/src/components/panels/onpage.js:71
 #: assets/scripts/src/components/panels/proofreading.js:64
 msgid "Your Price:"
 msgstr "Ditt pris:"
@@ -351,7 +390,7 @@ msgid "Target Search Keyword"
 msgstr "Nyckelord för sökning"
 
 #: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:62
+#: assets/scripts/src/components/panels/onpage.js:63
 msgid ""
 "We need to know what search keyword you want your page to rank for in "
 "Google. Well check to make sure that it is reasonable before we do the "
@@ -361,12 +400,12 @@ msgstr ""
 "kontrollerar att det är rimligt innan vi gör optimeringen."
 
 #: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:66
+#: assets/scripts/src/components/panels/onpage.js:67
 msgid "You've chosen express. You will have it ready in 24 hours."
 msgstr "Du har valt express. Du kommer att ha den klar inom 24 timmar."
 
 #: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:66
+#: assets/scripts/src/components/panels/onpage.js:67
 msgid "Without express, you will have the page ready in 72 hours."
 msgstr "Utan express har du sidan klar inom 72 timmar."
 

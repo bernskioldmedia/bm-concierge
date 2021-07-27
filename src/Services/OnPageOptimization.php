@@ -19,4 +19,10 @@ class OnPageOptimization extends BaseService {
 
 		return $this->data->pricing->{$tier}->large->{$this->get_currency()};
 	}
+
+	protected function get_order_internal_email_message_extra_meta(): void {
+		?>
+		<p><strong>Keyword:</strong> <?php echo $this->order_data->keyword; ?></p>
+		<?php
+	}
 }

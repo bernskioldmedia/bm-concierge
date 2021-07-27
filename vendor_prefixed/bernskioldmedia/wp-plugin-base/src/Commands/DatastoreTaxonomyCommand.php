@@ -1,11 +1,11 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Commands;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Commands;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Inflect;
-use WPPS_Vendor\Symfony\Component\Console\Input\InputInterface;
-use WPPS_Vendor\Symfony\Component\Console\Input\InputOption;
-use function WPPS_Vendor\Symfony\Component\String\u;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Inflect;
+use BMCG_Vendor\Symfony\Component\Console\Input\InputInterface;
+use BMCG_Vendor\Symfony\Component\Console\Input\InputOption;
+use function BMCG_Vendor\Symfony\Component\String\u;
 class DatastoreTaxonomyCommand extends MakeCommand
 {
     protected static $basePath = '/src/DataStores/';

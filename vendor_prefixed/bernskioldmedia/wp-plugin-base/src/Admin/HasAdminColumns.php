@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Admin;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Admin;
 
 \defined('ABSPATH') || exit;
 /**
@@ -40,6 +40,6 @@ trait HasAdminColumns
      */
     protected static function is_admin_columns_writeable() : bool
     {
-        return \defined('WPPS_Vendor\\ACP_COLUMNS_WRITABLE') ? ACP_COLUMNS_WRITABLE : \false;
+        return \defined('BMCG_Vendor\\ACP_COLUMNS_WRITABLE') ? ACP_COLUMNS_WRITABLE : \false;
     }
 }

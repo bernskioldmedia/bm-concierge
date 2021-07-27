@@ -20,7 +20,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "WPPS_Vendor\\WPPS_Vendor\\BernskioldMedia\\WP\\PluginBase\\": "src\/"
+            "BMCG_Vendor\\BMCG_Vendor\\BernskioldMedia\\WP\\PluginBase\\": "src\/"
         }
     },
     "bin": [

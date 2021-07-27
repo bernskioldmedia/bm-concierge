@@ -1,8 +1,8 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\DataStores;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\DataStores;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\DataStoreInterface;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\DataStoreInterface;
 \defined('ABSPATH') || exit;
 /**
  * Class Data_Store_WP

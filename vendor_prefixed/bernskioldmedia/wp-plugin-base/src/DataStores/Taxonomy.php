@@ -14,9 +14,9 @@
  * @package BernskioldMedia\WP\PluginBase
  * @since   1.0.0
  */
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\DataStores;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\DataStores;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Exceptions\DataStoreException;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Exceptions\DataStoreException;
 \defined('ABSPATH') || exit;
 /**
  * Class Taxonomy

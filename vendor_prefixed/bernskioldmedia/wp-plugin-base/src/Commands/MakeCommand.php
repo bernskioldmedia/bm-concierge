@@ -1,11 +1,11 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Commands;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Commands;
 
-use WPPS_Vendor\Symfony\Component\Console\Command\Command;
-use WPPS_Vendor\Symfony\Component\Console\Input\InputArgument;
-use WPPS_Vendor\Symfony\Component\Console\Input\InputInterface;
-use WPPS_Vendor\Symfony\Component\Console\Output\OutputInterface;
+use BMCG_Vendor\Symfony\Component\Console\Command\Command;
+use BMCG_Vendor\Symfony\Component\Console\Input\InputArgument;
+use BMCG_Vendor\Symfony\Component\Console\Input\InputInterface;
+use BMCG_Vendor\Symfony\Component\Console\Output\OutputInterface;
 abstract class MakeCommand extends Command
 {
     protected static $basePath = '/';

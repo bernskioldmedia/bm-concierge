@@ -10,12 +10,12 @@ const sharedConfig = {
 		...defaultConfig.plugins,
 		new ReplaceInFileWebpackPlugin( [
 			{
-				dir: 'dist',
+				dir: 'assets/scripts/dist',
 				test: [ /\.js/ ],
 				rules: [
 					{
 						search: /TEXTDOMAIN/gi,
-						replace: 'wp-plugin-scaffold',
+						replace: 'bm-concierge',
 					},
 				],
 			},
@@ -26,11 +26,10 @@ const sharedConfig = {
 const scripts = {
 	...sharedConfig,
 	entry: {
-		'app': './assets/scripts/src/index.js',
-		'admin': './assets/scripts/src/admin.js',
+		'block-editor': './assets/scripts/src/block-editor.js',
 	},
 	output: {
-		path: path.resolve( process.cwd(), 'dist' ),
+		path: path.resolve( process.cwd(), 'assets/scripts/dist' ),
 		filename: '[name].js',
 		chunkFilename: '[name].js',
 	},

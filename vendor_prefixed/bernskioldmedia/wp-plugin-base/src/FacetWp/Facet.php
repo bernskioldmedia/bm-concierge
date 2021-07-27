@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\FacetWp;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\FacetWp;
 
 abstract class Facet
 {

@@ -16,25 +16,22 @@ defined( 'ABSPATH' ) || exit;
 
 class Assets extends AssetManager {
 
-	protected static array $public_scripts = [];
-	protected static array $admin_scripts  = [];
+	public static function hooks(): void {
+		parent::hooks();
 
-	protected static array $public_styles = [];
-	protected static array $admin_styles  = [];
-
-	public static function enqueue_public_scripts(): void {
-		// @todo Enqueue here. Registration already done automatically.
+		add_action( 'enqueue_block_editor_assets', [ self::class, 'block_editor' ] );
 	}
 
-	public static function enqueue_admin_scripts(): void {
-		// @todo Enqueue here. Registration already done automatically.
-	}
+	public static function block_editor(): void {
+		if ( true !== apply_filters( 'bm/concierge/enabled', true ) ) {
+			return;
+		}
 
-	public static function enqueue_public_styles(): void {
-		// @todo Enqueue here. Registration already done automatically.
-	}
+		$meta = require_once Plugin::get_path( 'assets/scripts/dist/block-editor.asset.php' );
+		wp_register_script( 'bm-concierge-block-editor', Plugin::get_url( 'assets/scripts/dist/block-editor.js' ), $meta['dependencies'] ?? [],
+			$meta['version'] ?? Plugin::get_version(), true );
 
-	public static function enqueue_admin_styles(): void {
-		// @todo Enqueue here. Registration already done automatically.
+		wp_enqueue_script( 'bm-concierge-block-editor' );
+		wp_set_script_translations( 'bm-concierge-block-editor', 'bm-concierge', Plugin::get_path( 'languages/' ) );
 	}
 }

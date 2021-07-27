@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase;
 
 \defined('ABSPATH') || exit;
 /**
@@ -159,7 +159,7 @@ class BasePlugin
      */
     public static function load_languages() : void
     {
-        $locale = is_admin() && \function_exists('WPPS_Vendor\\get_user_locale') ? get_user_locale() : get_locale();
+        $locale = is_admin() && \function_exists('BMCG_Vendor\\get_user_locale') ? get_user_locale() : get_locale();
         $locale = apply_filters('plugin_locale', $locale, static::get_textdomain());
         unload_textdomain(static::get_textdomain());
         // Start checking in the main language dir.

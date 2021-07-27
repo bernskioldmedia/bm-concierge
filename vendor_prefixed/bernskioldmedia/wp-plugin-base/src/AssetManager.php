@@ -1,8 +1,8 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\Hookable;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\Hookable;
 \defined('ABSPATH') || exit;
 abstract class AssetManager implements Hookable
 {

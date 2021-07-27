@@ -1,8 +1,8 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Exceptions;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Exceptions;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Log;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Log;
 \defined('ABSPATH') || exit;
 /**
  * Class Data_Store_Exception

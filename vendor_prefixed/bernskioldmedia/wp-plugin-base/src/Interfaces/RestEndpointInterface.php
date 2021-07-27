@@ -7,7 +7,7 @@
  * @package BernskioldMedia\WP\PluginBase
  * @since   1.0.0
  */
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces;
 
 \defined('ABSPATH') || exit;
 /**

@@ -1,0 +1,427 @@
+# Copyright (C) 2021 Bernskiold Media
+# This file is distributed under the same license as the BM Concierge plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: BM Concierge 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bm-concierge\n"
+"POT-Creation-Date: 2021-07-27T15:30:57+00:00\n"
+"PO-Revision-Date: 2021-07-27 17:31+0200\n"
+"Last-Translator: Erik Bernskiold <erik@bernskioldmedia.com>\n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Domain: bm-concierge\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: assets/scripts/dist/block-editor.js:1 assets/scripts/src/block-editor.js:18
+#: assets/scripts/src/block-editor.js:25 assets/scripts/src/block-editor.js:29
+msgid "BM Concierge"
+msgstr "BM Concierge"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://bernskioldmedia.com"
+msgstr "https://bernskioldmedia.se"
+
+#. Description of the plugin
+msgid ""
+"Our help at your fingertips. BM Concierge lets you easily access content and "
+"assistive service for your site, right from the dashboard."
+msgstr ""
+"Vår hjälp finns till hands för dig. Med BM Concierge kan du enkelt få "
+"tillgång till innehåll och hjälpmedel för din webbplats, direkt från "
+"dashboarden."
+
+#. Author of the plugin
+msgid "Bernskiold Media"
+msgstr "Bernskiold Media"
+
+#: src/Services/BaseService.php:56
+msgid "Concierge Order Confirmation"
+msgstr "Beställningsbekräftelse från Concierge"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:26
+#: assets/scripts/src/components/concierge-sidebar.js:56
+msgid ""
+"Sometimes you could use an extra hand. We'll help you make your content and "
+"website be the best it can be."
+msgstr ""
+"Ibland kan du behöva en extra hand. Vi hjälper dig att göra ditt innehåll "
+"och din webbplats så bra som möjligt."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:33
+msgid "Accessibility Audit"
+msgstr "Tillgänglighetsanalys"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:36
+msgid "SEO Optimization"
+msgstr "SEO-optimering"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:39
+msgid "Proofreading"
+msgstr "Korrekturläsning"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:42
+msgid "Layout"
+msgstr "Layout"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:46
+msgid "Open Concierge"
+msgstr "Öppna concierge"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-panel.js:52
+#: assets/scripts/src/components/concierge-sidebar.js:43
+msgid ""
+"Some prices may depend on how much content you have. As you update the page, "
+"the price may update."
+msgstr ""
+"Vissa priser kan bero på hur mycket innehåll du har. När du uppdaterar sidan "
+"kan priset uppdateras."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/order-modal.js:11
+msgid "Place Order"
+msgstr "Beställ nu"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/order-modal.js:12
+msgid ""
+"Thanks for placing your concierge order. You will receive a confirmation at "
+"your e-mail address shortly."
+msgstr ""
+"Tack för din beställning. Du kommer att få en bekräftelse på din e-"
+"postadress inom kort."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/order-modal.js:31
+msgctxt "concierge terms page"
+msgid "https://bernskioldmedia.com/en/terms-policies/concierge/"
+msgstr "https://bernskioldmedia.com/sv/villkor-policies/concierge/"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/order-modal.js:35
+msgid "Our concierge terms apply ›"
+msgstr "Våra villkor för concierge gäller ›"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/order-modal.js:40
+msgid "Never Mind"
+msgstr "Låt det vara"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:23
+msgid "Accessibility Audit: %s"
+msgstr "Tillgänglighetsanalys: %s"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:27
+msgid "Accessibility Audit: "
+msgstr "Tillgänglighetsanalys: "
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:33
+msgid ""
+"Confidently meet WCAG accessibility criteria. We'll analyze your content and "
+"return to you a checklist of things to address to meet the criteria."
+msgstr ""
+"Uppfyll WCAG-kriterierna för tillgänglighet. Vi analyserar ditt innehåll och "
+"ger dig en checklista med saker som du måste åtgärda för att uppfylla "
+"kriterierna."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:35
+#: assets/scripts/src/components/panels/layout.js:34
+#: assets/scripts/src/components/panels/onpage.js:36
+#: assets/scripts/src/components/panels/proofreading.js:35
+msgid "Turnaround"
+msgstr "Leveranstid"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:35
+#: assets/scripts/src/components/panels/layout.js:34
+#: assets/scripts/src/components/panels/onpage.js:36
+#: assets/scripts/src/components/panels/proofreading.js:35
+msgid "72 hours (24h express)"
+msgstr "72 timmar (24h express)"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:36
+#: assets/scripts/src/components/panels/layout.js:35
+#: assets/scripts/src/components/panels/onpage.js:37
+#: assets/scripts/src/components/panels/proofreading.js:36
+msgid "Price"
+msgstr "Pris"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:39
+#: assets/scripts/src/components/panels/layout.js:38
+#: assets/scripts/src/components/panels/onpage.js:40
+#: assets/scripts/src/components/panels/proofreading.js:39
+msgid "Proceed to Order"
+msgstr "Fortsätt till beställning"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:42
+msgid "Accessibility Review Concierge"
+msgstr "Tillgänglighetsanalys"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:46
+msgid "Start Accessibility Audit"
+msgstr "Starta tillgänglighetsanalys"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:55
+msgid ""
+"Publishing accessible content is important. In some sectors even required. "
+"An accessibility audit on this page against WCAG 2.1 AA includes all content "
+"and documents on it. You get a comprehensive audit protocol showing you what "
+"to improve and what is already good."
+msgstr ""
+"Det är viktigt att publicera tillgängligt innehåll. I vissa branscher är det "
+"till och med ett krav. En tillgänglighetsanalys av den här sidan enligt WCAG "
+"2.1 AA omfattar texten och alla dokument på sidan. Du får ett omfattande "
+"granskningsprotokoll som visar vad som behöver förbättras och vad som redan "
+"är bra."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:56
+msgid ""
+"We'll have the analysis back to you in 72 hours via email. In a hurry? Add "
+"the express option and get it back within 24 hours."
+msgstr ""
+"Du får analysen inom 72 timmar via e-post. Har du bråttom? Lägg till "
+"expressalternativet och få den inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:59
+#: assets/scripts/src/components/panels/layout.js:59
+#: assets/scripts/src/components/panels/onpage.js:65
+#: assets/scripts/src/components/panels/proofreading.js:59
+msgid "Express Delivery (%s)"
+msgstr "Expressleverans (%s)"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:60
+msgid "You've chosen express. You will get the analysis in 24 hours."
+msgstr "Du har valt express. Du får analysen inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:60
+msgid "Without express, you will get the analysis in 72 hours."
+msgstr "Utan express får du analysen inom 72 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/accessibility-review.js:64
+#: assets/scripts/src/components/panels/layout.js:64
+#: assets/scripts/src/components/panels/onpage.js:70
+#: assets/scripts/src/components/panels/proofreading.js:64
+msgid "Your Price:"
+msgstr "Ditt pris:"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:22
+msgid "Layout: %s"
+msgstr "Layout: %s"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:26
+msgid "Layout: "
+msgstr "Layout: "
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:32
+msgid ""
+"Good design leaves a lasting impression and converts visitors. Let us help "
+"you create an engaging layout for this page."
+msgstr ""
+"Bra design ger ett bestående intryck och konverterar besökare. Låt oss "
+"hjälpa dig att skapa en engagerande layout för den här sidan."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:41
+msgid "Layout Concierge"
+msgstr "Layout Concierge"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:45
+msgid "Send for Layouting"
+msgstr "Skicka för layout"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:54
+msgid ""
+"Using the full range of visuals on your website well make this page look "
+"interesting, great and converting."
+msgstr ""
+"Genom att använda alla visuella element på din webbplats får vi sidan att se "
+"bra ut, intressant, och vara konverterande."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:55
+msgid ""
+"We won't create illustrations, graphics or other media as part of this. But "
+"we may suggest it if we think it will benefit the page."
+msgstr ""
+"Vi kommer inte att skapa illustrationer, grafik eller andra medier som en "
+"del av detta. Men vi kan föreslå det om vi tror att det gynnar sidan."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:56
+#: assets/scripts/src/components/panels/proofreading.js:56
+msgid ""
+"We'll have the text back to you in 72 hours, right here in the editor. In a "
+"hurry? Add the express option and get it back within 24 hours."
+msgstr ""
+"Du får tillbaka texten inom 72 timmar, här i redigeringsverktyget. Har du "
+"bråttom? Lägg till expressalternativet och få tillbaka texten inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:60
+msgid "You've chosen express. Your page layout will be done in 24 hours."
+msgstr "Du har valt express. Layouten kommer att vara klar inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/layout.js:60
+msgid "Without express, your page layout will be done in 72 hours."
+msgstr "Utan express kommer layouten vara klar om 72 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:24
+msgid "SEO Optimization: %s"
+msgstr "SEO-optimering: %s"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:28
+msgid "SEO Optimization: "
+msgstr "SEO-optimering: "
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:34
+msgid "Make your page rank well in search engines by on-page SEO optimization."
+msgstr ""
+"Få din sida att rankas väl i sökmotorerna genom SEO-optimering på sidan."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:43
+msgid "SEO Optimization Concierge"
+msgstr "SEO-optimering"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:47
+msgid "Send for SEO Optimization"
+msgstr "Skicka för SEO-optimering"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:57
+msgid ""
+"On-page SEO optimization boosts the ranking for the page in search engines. "
+"Based on your keyword, we will adjust the page for optimal ranking. Tweaking "
+"copy, optimizing titles and descriptions for Google and social sharing and "
+"taking care of more technical factors."
+msgstr ""
+"SEO-optimering på sidan förbättrar sidans placering i sökmotorerna. Med "
+"utgångspunkt i ditt nyckelord justerar vi sidan för optimal placering. "
+"Texten justeras, titlar och beskrivningar för Google och social delning "
+"optimeras och vi tar hand om mer tekniska faktorer."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:58
+msgid ""
+"We'll have the page ready for you in 72 hours, right here in the editor. In "
+"a hurry? Add the express option and have it ready within 24 hours."
+msgstr ""
+"Vi har sidan klar för dig inom 72 timmar här i redigeringsverktyget. Har du "
+"bråttom? Lägg till expressalternativet och få den klar inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:61
+msgid "Target Search Keyword"
+msgstr "Nyckelord för sökning"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:62
+msgid ""
+"We need to know what search keyword you want your page to rank for in "
+"Google. Well check to make sure that it is reasonable before we do the "
+"optimization."
+msgstr ""
+"Vi behöver veta vilket sökord du vill att din sida ska hamna högt för. Vi "
+"kontrollerar att det är rimligt innan vi gör optimeringen."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:66
+msgid "You've chosen express. You will have it ready in 24 hours."
+msgstr "Du har valt express. Du kommer att ha den klar inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/onpage.js:66
+msgid "Without express, you will have the page ready in 72 hours."
+msgstr "Utan express har du sidan klar inom 72 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:23
+msgid "Proofreading: %s"
+msgstr "Korrekturläsning: %s"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:27
+msgid "Proofreading: "
+msgstr "Korrekturläsning: "
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:33
+msgid ""
+"Ready to publish but want a second eye? Let us proof your content to free it "
+"from mistakes."
+msgstr ""
+"Är du redo att publicera men vill ha ett snabbt öga till på texten? Låt oss "
+"granska ditt innehåll så att det inte innehåller några misstag."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:42
+msgid "Proofreading Concierge"
+msgstr "Korrekturläsning"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:46
+msgid "Send for Proofreading"
+msgstr "Skicka för korrekturläsning"
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:55
+msgid ""
+"Proofreading includes catching any errors and making sure the content "
+"adheres to a well-formed style."
+msgstr ""
+"Korrekturläsning inkluderar rättning av eventuella fel och vi ser till att "
+"innehållet följer en välformad stil."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:60
+msgid "You've chosen express. You will get your content back in 24 hours."
+msgstr "Du har valt express. Du får tillbaka ditt innehåll inom 24 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/panels/proofreading.js:60
+msgid "Without express, you will get your text back in 72 hours."
+msgstr "Utan express får du tillbaka din text inom 72 timmar."
+
+#: assets/scripts/dist/block-editor.js:1
+#: assets/scripts/src/components/concierge-sidebar.js:48
+msgid ""
+"All prices apply to this specific page of content only. Not the entire "
+"website."
+msgstr ""
+"Alla priser gäller endast för den här specifika sidan. Inte hela webbplatsen."

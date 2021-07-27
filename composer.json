@@ -37,7 +37,7 @@
     ],
     "prefix-dependencies": [
       "composer require humbug/php-scoper:dev-master --dev -W",
-      "php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=WPPS_Vendor --config config/php-scoper/bm-wp-plugin-base.php --output-dir vendor_prefixed/bernskioldmedia/wp-plugin-base --force",
+      "php ./vendor/humbug/php-scoper/bin/php-scoper add-prefix --prefix=BMCG_Vendor --config config/php-scoper/bm-wp-plugin-base.php --output-dir vendor_prefixed/bernskioldmedia/wp-plugin-base --force",
       "composer remove humbug/php-scoper --dev"
     ]
   }

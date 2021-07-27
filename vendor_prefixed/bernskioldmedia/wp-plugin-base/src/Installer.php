@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase;
 
 \defined('ABSPATH') || exit;
 /**

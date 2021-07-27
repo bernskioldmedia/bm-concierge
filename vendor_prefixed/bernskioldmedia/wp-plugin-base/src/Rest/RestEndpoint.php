@@ -7,9 +7,9 @@
  * @package BernskioldMedia\WP\PluginBase
  * @since   1.0.0
  */
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Rest;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Rest;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\RestEndpointInterface;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\RestEndpointInterface;
 \defined('ABSPATH') || exit;
 /**
  * Class RestEndpoint
@@ -83,7 +83,7 @@ abstract class RestEndpoint extends \WP_REST_Controller implements RestEndpointI
     /**
      * Get sanitized URL param filter value.
      */
-    protected function get_filter_value(\WPPS_Vendor\WP_REST_Request $request, string $key) : ?string
+    protected function get_filter_value(\BMCG_Vendor\WP_REST_Request $request, string $key) : ?string
     {
         return isset($request[$key]) ? wp_strip_all_tags($request[$key]) : null;
     }

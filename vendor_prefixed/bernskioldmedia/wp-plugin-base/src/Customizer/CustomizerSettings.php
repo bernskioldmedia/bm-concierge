@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Customizer;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Customizer;
 
 use WP_Customize_Control;
 use WP_Customize_Manager;

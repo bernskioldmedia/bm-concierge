@@ -18,9 +18,9 @@
  * @package BernskioldMedia\WP\Event
  * @since   1.0.0
  */
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Data;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Data;
 
-use WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\DataInterface;
+use BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces\DataInterface;
 \defined('ABSPATH') || exit;
 /**
  * Abstract Class Data

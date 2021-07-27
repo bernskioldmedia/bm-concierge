@@ -12,10 +12,10 @@
  *
  * @package BernskioldMedia\WP\PluginBase
  */
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase;
 
-use WPPS_Vendor\Monolog\Handler\StreamHandler;
-use WPPS_Vendor\Monolog\Logger;
+use BMCG_Vendor\Monolog\Handler\StreamHandler;
+use BMCG_Vendor\Monolog\Logger;
 \defined('ABSPATH') || exit;
 /**
  * Class Log

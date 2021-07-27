@@ -1,6 +1,6 @@
 <?php
 
-namespace WPPS_Vendor\BernskioldMedia\WP\PluginBase\Interfaces;
+namespace BMCG_Vendor\BernskioldMedia\WP\PluginBase\Interfaces;
 
 /**
  * Interface Hookable

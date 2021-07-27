@@ -8,12 +8,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Added
 
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Proofreading service
+- Layout service
+- On-Page SEO service
+- Accessibility Audit service

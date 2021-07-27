@@ -27,7 +27,7 @@ abstract class BaseService {
 	}
 
 	protected function get_data(): void {
-		$api_url = apply_filters( 'bm/concierge/pricing_api_url', 'https://static.bernskioldmedia.com/concierge/api.json' );
+		$api_url = apply_filters( 'bm/concierge/pricing_api_url', 'https://static.bernskioldmedia.com/concierge/api.json', $this->key );
 
 		$data = get_transient( 'bm_concierge_products' );
 
@@ -129,6 +129,6 @@ abstract class BaseService {
 				return 'USD';
 		}
 
-		return apply_filters( 'bm/concierge/currency', $currency );
+		return apply_filters( 'bm/concierge/currency', $currency, $this->key );
 	}
 }

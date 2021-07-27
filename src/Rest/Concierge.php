@@ -118,8 +118,6 @@ class Concierge extends RestEndpoint {
 	}
 
 	public static function has_logged_in_access(): bool {
-		return true;
-
 		return is_user_logged_in();
 	}
 

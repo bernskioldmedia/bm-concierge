@@ -45,11 +45,7 @@ export default function ConciergePanel() {
 					  <Button onClick={ openConciergeSidebar } variant="secondary" isSecondary>
 						  { __( 'Open Concierge', 'bm-concierge' ) }
 					  </Button>
-					  <p style={ {
-						  fontSize: '11px',
-						  color: '#666',
-						  marginTop: '8px'
-					  } }>{ __( 'Some prices may depend on how much content you have. As you update the page, the price may update.', 'bm-concierge' ) }</p>
+					  <p className="bm-concierge-disclaimer">{ __( 'Some prices may depend on how much content you have. As you update the page, the price may update.', 'bm-concierge' ) }</p>
 				  </>
 			  ) }
 		</>

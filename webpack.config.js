@@ -10,7 +10,7 @@ const sharedConfig = {
 		...defaultConfig.plugins,
 		new ReplaceInFileWebpackPlugin( [
 			{
-				dir: 'assets/scripts/dist',
+				dir: 'dist',
 				test: [ /\.js/ ],
 				rules: [
 					{
@@ -26,10 +26,10 @@ const sharedConfig = {
 const scripts = {
 	...sharedConfig,
 	entry: {
-		'block-editor': './assets/scripts/src/block-editor.js',
+		'block-editor': './assets/src/block-editor.js',
 	},
 	output: {
-		path: path.resolve( process.cwd(), 'assets/scripts/dist' ),
+		path: path.resolve( process.cwd(), 'dist' ),
 		filename: '[name].js',
 		chunkFilename: '[name].js',
 	},

@@ -2,6 +2,7 @@ import { register } from '@wordpress/data';
 import { PluginDocumentSettingPanel, PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-post';
 import { __ } from '@wordpress/i18n';
 import { registerPlugin } from '@wordpress/plugins';
+import './block-editor.css';
 import icon from './components/concierge-icon';
 import ConciergePanel from './components/concierge-panel';
 import ConciergeSidebar from './components/concierge-sidebar';

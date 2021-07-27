@@ -54,7 +54,7 @@ export default function Proofreading() {
 			>
 				<p>{ __( 'Proofreading includes catching any errors and making sure the content adheres to a well-formed style.', 'bm-concierge' ) }</p>
 				<p>{ __( "We'll have the text back to you in 72 hours, right here in the editor. In a hurry? Add the express option and get it back within 24 hours.", 'bm-concierge' ) }</p>
-				<hr style={ { margin: '16px 0 24px 0' } } />
+				<hr className="bm-concierge-divider" />
 				<ToggleControl
 					label={ sprintf( __( 'Express Delivery (%s)', 'bm-concierge' ), formattedExpressPriceExtra ) }
 					help={ isExpress ? __( 'You\'ve chosen express. You will get your content back in 24 hours.', 'bm-concierge' ) : __( 'Without express, you will get your text back in 72 hours.', 'bm-concierge' ) }

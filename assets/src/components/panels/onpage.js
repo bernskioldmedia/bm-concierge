@@ -56,7 +56,7 @@ export default function OnPage() {
 			>
 				<p>{ __( 'On-page SEO optimization boosts the ranking for the page in search engines. Based on your keyword, we will adjust the page for optimal ranking. Tweaking copy, optimizing titles and descriptions for Google and social sharing and taking care of more technical factors.', 'bm-concierge' ) }</p>
 				<p>{ __( "We'll have the page ready for you in 72 hours, right here in the editor. In a hurry? Add the express option and have it ready within 24 hours.", 'bm-concierge' ) }</p>
-				<hr style={ { margin: '16px 0 24px 0' } } />
+				<hr className="bm-concierge-divider" />
 				<TextControl
 					label={ __( 'Target Search Keyword', 'bm-concierge' ) }
 					onChange={ setKeyword }

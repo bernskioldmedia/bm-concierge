@@ -18,7 +18,7 @@ export default function OrderModal( props ) {
 	}
 
 	return (
-		<Modal title={ title } onRequestClose={ onClose } style={ { maxWidth: 'calc(100% - 96px)', width: '640px' } }>
+		<Modal title={ title } onRequestClose={ onClose } className="bm-concierge-order-modal">
 			{ hasBeenSubmitted ? (
 				<Notice status="success" isDismissible={ false }>
 					{ thankYouNotice }

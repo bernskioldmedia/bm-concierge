@@ -1,0 +1,19 @@
+.bm-concierge-order-modal {
+	max-width: calc(100% - 96px);
+	width: 640px;
+}
+
+.bm-concierge-disclaimer {
+	font-size: 11px;
+	color: #666;
+	margin-top: 8px;
+}
+
+.bm-concierge-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.bm-concierge-divider {
+	margin: 16px 0 24px 0;
+}

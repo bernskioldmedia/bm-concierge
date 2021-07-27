@@ -24,7 +24,7 @@ webpack.config.js		export-ignore
 .git                 	export-ignore
 .gitkeep			 	export-ignore
 
-/assets/scripts/src		export-ignore
+/assets/src		export-ignore
 
 ##
 # Don't try and diff these...
@@ -32,8 +32,7 @@ webpack.config.js		export-ignore
 composer.lock -diff
 package-lock.json -diff
 *.map -diff
-assets/scripts/dist/*.css -diff
-assets/styles/dist/*.css -diff
+dist/* -diff
 
 ##
 # Handle line endings.

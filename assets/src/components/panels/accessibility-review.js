@@ -54,7 +54,7 @@ export default function AccessibilityReview() {
 			>
 				<p>{ __( 'Publishing accessible content is important. In some sectors even required. An accessibility audit on this page against WCAG 2.1 AA includes all content and documents on it. You get a comprehensive audit protocol showing you what to improve and what is already good.', 'bm-concierge' ) }</p>
 				<p>{ __( "We'll have the analysis back to you in 72 hours via email. In a hurry? Add the express option and get it back within 24 hours.", 'bm-concierge' ) }</p>
-				<hr style={ { margin: '16px 0 24px 0' } } />
+				<hr className="bm-concierge-divider" />
 				<ToggleControl
 					label={ sprintf( __( 'Express Delivery (%s)', 'bm-concierge' ), formattedExpressPriceExtra ) }
 					help={ isExpress ? __( 'You\'ve chosen express. You will get the analysis in 24 hours.', 'bm-concierge' ) : __( 'Without express, you will get the analysis in 72 hours.', 'bm-concierge' ) }

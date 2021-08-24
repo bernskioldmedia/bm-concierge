@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+## [1.0.1] - 2021-08-24
+
+### Added
+
+- Auto-update functionality that ties in with WP updater.
+
 ## [1.0.0] - 2021-07-27
 
 ### Added

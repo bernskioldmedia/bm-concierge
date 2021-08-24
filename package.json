@@ -1,7 +1,7 @@
 {
   "name": "bm-concierge",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Our help at your fingertips. BM Concierge lets you easily access content and assistive service for your site, right from the dashboard.",
   "main": "assets/scripts/src/index.js",
   "scripts": {

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+### Fixed
+
+- Editor settings would crash when attempting to open.
+
 ## [1.0.1] - 2021-08-24
 
 ### Added

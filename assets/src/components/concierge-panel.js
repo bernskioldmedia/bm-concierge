@@ -1,7 +1,7 @@
 import { Button, Spinner } from '@wordpress/components';
 import { dispatch } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
-import { useAccessibilityPrice, useLayoutPrice, useOnPagePrice, useProofreadingPrice } from '../hooks/price';
+import { useAccessibilityPrice, useLayoutPrice, useMachineTranslationPrice, useOnPagePrice, useProofreadingPrice } from '../hooks/price';
 import { useServices } from '../hooks/services';
 
 export default function ConciergePanel() {
@@ -10,12 +10,14 @@ export default function ConciergePanel() {
 		isOnpageEnabled,
 		isProofreadingEnabled,
 		isAccessibilityEnabled,
+		isMachineTranslationEnabled,
 		hasLoadedServices,
 	} = useServices();
 	const { formattedNormalPrice: proofreadingPrice } = useProofreadingPrice();
 	const { formattedNormalPrice: onPagePrice } = useOnPagePrice();
 	const { formattedNormalPrice: accessibilityPrice } = useAccessibilityPrice();
 	const { formattedNormalPrice: layoutPrice } = useLayoutPrice();
+	const { formattedNormalPrice: machineTranslationPrice } = useMachineTranslationPrice();
 
 	const openConciergeSidebar = () => {
 		dispatch( 'core/edit-post' ).openGeneralSidebar( 'bm-concierge/sidebar' );
@@ -40,6 +42,9 @@ export default function ConciergePanel() {
 						  ) }
 						  { isLayoutEnabled && (
 							  <li><strong>{ __( 'Layout', 'bm-concierge' ) }:</strong> { layoutPrice ? layoutPrice : <Spinner /> }</li>
+						  ) }
+						  { isMachineTranslationEnabled && (
+							  <li><strong>{ __( 'Machine Translation', 'bm-concierge' ) }:</strong> { machineTranslationPrice ? machineTranslationPrice : <Spinner /> }</li>
 						  ) }
 					  </ul>
 					  <Button onClick={ openConciergeSidebar } variant="secondary" isSecondary>

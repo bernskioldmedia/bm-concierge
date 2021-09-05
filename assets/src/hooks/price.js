@@ -45,3 +45,7 @@ export const useProofreadingPrice = () => {
 export const useLayoutPrice = () => {
 	return usePriceSelect( 'layout', { wordCount: getWordCount() } );
 };
+
+export const useMachineTranslationPrice = () => {
+	return usePriceSelect( 'machine_translation', { wordCount: getWordCount() } );
+};

@@ -10,6 +10,7 @@ export default function OrderModal( props ) {
 		children,
 		submitButtonText = __( 'Place Order', 'bm-concierge' ),
 		thankYouNotice = __( 'Thanks for placing your concierge order. You will receive a confirmation at your e-mail address shortly.', 'bm-concierge' ),
+		showRefreshAfterSubmit = false,
 		onSubmit,
 	} = props;
 
@@ -20,9 +21,19 @@ export default function OrderModal( props ) {
 	return (
 		<Modal title={ title } onRequestClose={ onClose } className="bm-concierge-order-modal">
 			{ hasBeenSubmitted ? (
-				<Notice status="success" isDismissible={ false }>
-					{ thankYouNotice }
-				</Notice>
+				<>
+					<Notice status="success" isDismissible={ false }>
+						{ thankYouNotice }
+					</Notice>
+					{ showRefreshAfterSubmit ? (
+						<>
+							<p>{ __( 'To see the automatic changes from Concerige, please refresh the page now.', 'bm-concierge' ) }</p>
+							<Button variant="primary" isPrimary onClick={ () => window.location.reload() }>
+								{ __( 'Click to Reload Page Now', 'bm-concierge' ) }
+							</Button>
+						</>
+					) : null }
+				</>
 			) : (
 				  <>
 					  { children }

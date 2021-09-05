@@ -5,7 +5,7 @@ export const useServices = () => {
 		return select( 'bm/concierge' ).getServices();
 	}, [] );
 
-	const { onpage, proofreading, layout, accessibility } = services;
+	const { onpage, proofreading, layout, accessibility, machine_translation: machineTranslation } = services;
 
 	return {
 		enabledServicesCount: Object.keys( services ).length,
@@ -14,5 +14,6 @@ export const useServices = () => {
 		isProofreadingEnabled: proofreading === true,
 		isLayoutEnabled: layout === true,
 		isAccessibilityEnabled: accessibility === true,
+		isMachineTranslationEnabled: machineTranslation === true,
 	};
 };

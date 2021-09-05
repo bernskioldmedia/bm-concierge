@@ -9,16 +9,16 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-07-27T17:52:51+00:00\n"
+"POT-Creation-Date: 2021-09-05T08:43:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: bm-concierge\n"
 
 #. Plugin Name of the plugin
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/block-editor.js:18
-#: assets/scripts/src/block-editor.js:25
-#: assets/scripts/src/block-editor.js:29
+#: assets/src/block-editor.js:19
+#: assets/src/block-editor.js:26
+#: assets/src/block-editor.js:30
+#: dist/block-editor.js:1
 msgid "BM Concierge"
 msgstr ""
 
@@ -37,8 +37,8 @@ msgid "Bernskiold Media"
 msgstr ""
 
 #: src/Services/AccessibilityReview.php:11
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:33
+#: assets/src/components/concierge-panel.js:33
+#: dist/block-editor.js:1
 msgid "Accessibility Audit"
 msgstr ""
 
@@ -75,8 +75,8 @@ msgid "Best Regards,"
 msgstr ""
 
 #: src/Services/Layout.php:11
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:42
+#: assets/src/components/concierge-panel.js:42
+#: dist/block-editor.js:1
 msgid "Layout"
 msgstr ""
 
@@ -85,299 +85,299 @@ msgid "On-Page SEO Optimization"
 msgstr ""
 
 #: src/Services/Proofreading.php:11
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:39
+#: assets/src/components/concierge-panel.js:39
+#: dist/block-editor.js:1
 msgid "Proofreading"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:26
-#: assets/scripts/src/components/concierge-sidebar.js:56
+#: assets/src/components/concierge-panel.js:26
+#: assets/src/components/concierge-sidebar.js:48
+#: dist/block-editor.js:1
 msgid "Sometimes you could use an extra hand. We'll help you make your content and website be the best it can be."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:36
+#: assets/src/components/concierge-panel.js:36
+#: dist/block-editor.js:1
 msgid "SEO Optimization"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:46
+#: assets/src/components/concierge-panel.js:46
+#: dist/block-editor.js:1
 msgid "Open Concierge"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-panel.js:52
-#: assets/scripts/src/components/concierge-sidebar.js:43
+#: assets/src/components/concierge-panel.js:48
+#: assets/src/components/concierge-sidebar.js:39
+#: dist/block-editor.js:1
 msgid "Some prices may depend on how much content you have. As you update the page, the price may update."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/order-modal.js:11
+#: assets/src/components/concierge-sidebar.js:40
+#: dist/block-editor.js:1
+msgid "All prices apply to this specific page of content only. Not the entire website."
+msgstr ""
+
+#: assets/src/components/order-modal.js:11
+#: dist/block-editor.js:1
 msgid "Place Order"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/order-modal.js:12
+#: assets/src/components/order-modal.js:12
+#: dist/block-editor.js:1
 msgid "Thanks for placing your concierge order. You will receive a confirmation at your e-mail address shortly."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/order-modal.js:31
+#: assets/src/components/order-modal.js:31
+#: dist/block-editor.js:1
 msgctxt "concierge terms page"
 msgid "https://bernskioldmedia.com/en/terms-policies/concierge/"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/order-modal.js:35
+#: assets/src/components/order-modal.js:35
+#: dist/block-editor.js:1
 msgid "Our concierge terms apply ›"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/order-modal.js:40
+#: assets/src/components/order-modal.js:40
+#: dist/block-editor.js:1
 msgid "Never Mind"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:23
+#: assets/src/components/panels/accessibility-review.js:23
+#: dist/block-editor.js:1
 msgid "Accessibility Audit: %s"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:27
+#: assets/src/components/panels/accessibility-review.js:27
+#: dist/block-editor.js:1
 msgid "Accessibility Audit: "
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:33
+#: assets/src/components/panels/accessibility-review.js:33
+#: dist/block-editor.js:1
 msgid "Confidently meet WCAG accessibility criteria. We'll analyze your content and return to you a checklist of things to address to meet the criteria."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:35
-#: assets/scripts/src/components/panels/layout.js:34
-#: assets/scripts/src/components/panels/onpage.js:36
-#: assets/scripts/src/components/panels/proofreading.js:35
+#: assets/src/components/panels/accessibility-review.js:35
+#: assets/src/components/panels/layout.js:34
+#: assets/src/components/panels/onpage.js:36
+#: assets/src/components/panels/proofreading.js:35
+#: dist/block-editor.js:1
 msgid "Turnaround"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:35
-#: assets/scripts/src/components/panels/layout.js:34
-#: assets/scripts/src/components/panels/onpage.js:36
-#: assets/scripts/src/components/panels/proofreading.js:35
+#: assets/src/components/panels/accessibility-review.js:35
+#: assets/src/components/panels/layout.js:34
+#: assets/src/components/panels/onpage.js:36
+#: assets/src/components/panels/proofreading.js:35
+#: dist/block-editor.js:1
 msgid "72 hours (24h express)"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:36
-#: assets/scripts/src/components/panels/layout.js:35
-#: assets/scripts/src/components/panels/onpage.js:37
-#: assets/scripts/src/components/panels/proofreading.js:36
+#: assets/src/components/panels/accessibility-review.js:36
+#: assets/src/components/panels/layout.js:35
+#: assets/src/components/panels/onpage.js:37
+#: assets/src/components/panels/proofreading.js:36
+#: dist/block-editor.js:1
 msgid "Price"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:39
-#: assets/scripts/src/components/panels/layout.js:38
-#: assets/scripts/src/components/panels/onpage.js:40
-#: assets/scripts/src/components/panels/proofreading.js:39
+#: assets/src/components/panels/accessibility-review.js:39
+#: assets/src/components/panels/layout.js:38
+#: assets/src/components/panels/onpage.js:40
+#: assets/src/components/panels/proofreading.js:39
+#: dist/block-editor.js:1
 msgid "Proceed to Order"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:42
+#: assets/src/components/panels/accessibility-review.js:42
+#: dist/block-editor.js:1
 msgid "Accessibility Review Concierge"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:46
+#: assets/src/components/panels/accessibility-review.js:46
+#: dist/block-editor.js:1
 msgid "Start Accessibility Audit"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:55
+#: assets/src/components/panels/accessibility-review.js:55
+#: dist/block-editor.js:1
 msgid "Publishing accessible content is important. In some sectors even required. An accessibility audit on this page against WCAG 2.1 AA includes all content and documents on it. You get a comprehensive audit protocol showing you what to improve and what is already good."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:56
+#: assets/src/components/panels/accessibility-review.js:56
+#: dist/block-editor.js:1
 msgid "We'll have the analysis back to you in 72 hours via email. In a hurry? Add the express option and get it back within 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:59
-#: assets/scripts/src/components/panels/layout.js:59
-#: assets/scripts/src/components/panels/onpage.js:66
-#: assets/scripts/src/components/panels/proofreading.js:59
+#: assets/src/components/panels/accessibility-review.js:59
+#: assets/src/components/panels/layout.js:59
+#: assets/src/components/panels/onpage.js:66
+#: assets/src/components/panels/proofreading.js:59
+#: dist/block-editor.js:1
 msgid "Express Delivery (%s)"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:60
+#: assets/src/components/panels/accessibility-review.js:60
+#: dist/block-editor.js:1
 msgid "You've chosen express. You will get the analysis in 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:60
+#: assets/src/components/panels/accessibility-review.js:60
+#: dist/block-editor.js:1
 msgid "Without express, you will get the analysis in 72 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/accessibility-review.js:64
-#: assets/scripts/src/components/panels/layout.js:64
-#: assets/scripts/src/components/panels/onpage.js:71
-#: assets/scripts/src/components/panels/proofreading.js:64
+#: assets/src/components/panels/accessibility-review.js:64
+#: assets/src/components/panels/layout.js:64
+#: assets/src/components/panels/onpage.js:71
+#: assets/src/components/panels/proofreading.js:64
+#: dist/block-editor.js:1
 msgid "Your Price:"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:22
+#: assets/src/components/panels/layout.js:22
+#: dist/block-editor.js:1
 msgid "Layout: %s"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:26
+#: assets/src/components/panels/layout.js:26
+#: dist/block-editor.js:1
 msgid "Layout: "
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:32
+#: assets/src/components/panels/layout.js:32
+#: dist/block-editor.js:1
 msgid "Good design leaves a lasting impression and converts visitors. Let us help you create an engaging layout for this page."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:41
+#: assets/src/components/panels/layout.js:41
+#: dist/block-editor.js:1
 msgid "Layout Concierge"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:45
+#: assets/src/components/panels/layout.js:45
+#: dist/block-editor.js:1
 msgid "Send for Layouting"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:54
+#: assets/src/components/panels/layout.js:54
+#: dist/block-editor.js:1
 msgid "Using the full range of visuals on your website well make this page look interesting, great and converting."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:55
+#: assets/src/components/panels/layout.js:55
+#: dist/block-editor.js:1
 msgid "We won't create illustrations, graphics or other media as part of this. But we may suggest it if we think it will benefit the page."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:56
-#: assets/scripts/src/components/panels/proofreading.js:56
+#: assets/src/components/panels/layout.js:56
+#: assets/src/components/panels/proofreading.js:56
+#: dist/block-editor.js:1
 msgid "We'll have the text back to you in 72 hours, right here in the editor. In a hurry? Add the express option and get it back within 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:60
+#: assets/src/components/panels/layout.js:60
+#: dist/block-editor.js:1
 msgid "You've chosen express. Your page layout will be done in 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/layout.js:60
+#: assets/src/components/panels/layout.js:60
+#: dist/block-editor.js:1
 msgid "Without express, your page layout will be done in 72 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:24
+#: assets/src/components/panels/onpage.js:24
+#: dist/block-editor.js:1
 msgid "SEO Optimization: %s"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:28
+#: assets/src/components/panels/onpage.js:28
+#: dist/block-editor.js:1
 msgid "SEO Optimization: "
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:34
+#: assets/src/components/panels/onpage.js:34
+#: dist/block-editor.js:1
 msgid "Make your page rank well in search engines by on-page SEO optimization."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:43
+#: assets/src/components/panels/onpage.js:43
+#: dist/block-editor.js:1
 msgid "SEO Optimization Concierge"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:47
+#: assets/src/components/panels/onpage.js:47
+#: dist/block-editor.js:1
 msgid "Send for SEO Optimization"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:57
+#: assets/src/components/panels/onpage.js:57
+#: dist/block-editor.js:1
 msgid "On-page SEO optimization boosts the ranking for the page in search engines. Based on your keyword, we will adjust the page for optimal ranking. Tweaking copy, optimizing titles and descriptions for Google and social sharing and taking care of more technical factors."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:58
+#: assets/src/components/panels/onpage.js:58
+#: dist/block-editor.js:1
 msgid "We'll have the page ready for you in 72 hours, right here in the editor. In a hurry? Add the express option and have it ready within 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:61
+#: assets/src/components/panels/onpage.js:61
+#: dist/block-editor.js:1
 msgid "Target Search Keyword"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:63
+#: assets/src/components/panels/onpage.js:63
+#: dist/block-editor.js:1
 msgid "We need to know what search keyword you want your page to rank for in Google. Well check to make sure that it is reasonable before we do the optimization."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:67
+#: assets/src/components/panels/onpage.js:67
+#: dist/block-editor.js:1
 msgid "You've chosen express. You will have it ready in 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/onpage.js:67
+#: assets/src/components/panels/onpage.js:67
+#: dist/block-editor.js:1
 msgid "Without express, you will have the page ready in 72 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:23
+#: assets/src/components/panels/proofreading.js:23
+#: dist/block-editor.js:1
 msgid "Proofreading: %s"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:27
+#: assets/src/components/panels/proofreading.js:27
+#: dist/block-editor.js:1
 msgid "Proofreading: "
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:33
+#: assets/src/components/panels/proofreading.js:33
+#: dist/block-editor.js:1
 msgid "Ready to publish but want a second eye? Let us proof your content to free it from mistakes."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:42
+#: assets/src/components/panels/proofreading.js:42
+#: dist/block-editor.js:1
 msgid "Proofreading Concierge"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:46
+#: assets/src/components/panels/proofreading.js:46
+#: dist/block-editor.js:1
 msgid "Send for Proofreading"
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:55
+#: assets/src/components/panels/proofreading.js:55
+#: dist/block-editor.js:1
 msgid "Proofreading includes catching any errors and making sure the content adheres to a well-formed style."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:60
+#: assets/src/components/panels/proofreading.js:60
+#: dist/block-editor.js:1
 msgid "You've chosen express. You will get your content back in 24 hours."
 msgstr ""
 
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/panels/proofreading.js:60
+#: assets/src/components/panels/proofreading.js:60
+#: dist/block-editor.js:1
 msgid "Without express, you will get your text back in 72 hours."
-msgstr ""
-
-#: assets/scripts/dist/block-editor.js:1
-#: assets/scripts/src/components/concierge-sidebar.js:48
-msgid "All prices apply to this specific page of content only. Not the entire website."
 msgstr ""

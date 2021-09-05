@@ -41,7 +41,7 @@ abstract class RestEndpoint extends \WP_REST_Controller implements RestEndpointI
     /**
      * Namespace
      */
-    protected $namespace = 'bm_concierge';
+    protected $namespace = 'wp_plugin_scaffold';
     /**
      * Version
      */

@@ -27,7 +27,6 @@ class MachineTranslation extends BaseService {
 	public function get_translated_data( int $post_id, string $targetLanguage ): array {
 		$api_key = defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ) ? BM_CONCIERGE_ML_TRANSLATION_API_KEY : null;
 
-
 		if ( ! $api_key ) {
 			return [
 				'title'   => null,
@@ -44,8 +43,8 @@ class MachineTranslation extends BaseService {
 		];
 
 		return [
-			'title'   => $translator->translateText( $post->post_title, 'EN', 'SV', $options ),
-			'content' => $translator->translateText( $post->post_content, 'EN', 'SV', $options ),
+			'title'   => $translator->translateText( $post->post_title, null, $targetLanguage, $options ),
+			'content' => $translator->translateText( $post->post_content, null, $targetLanguage, $options ),
 		];
 	}
 

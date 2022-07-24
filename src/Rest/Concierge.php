@@ -8,6 +8,7 @@ use BernskioldMedia\WP\Concierge\Services\MachineTranslation;
 use BernskioldMedia\WP\Concierge\Services\OnPageOptimization;
 use BernskioldMedia\WP\Concierge\Services\Proofreading;
 use BernskioldMedia\WP\PluginBase\Rest\RestEndpoint;
+use DeepL\Translator;
 use WP_REST_Request;
 use WP_REST_Response;
 
@@ -52,6 +53,12 @@ class Concierge extends RestEndpoint {
 		$this->add_route( '/machine_translation', [
 			'methods'             => self::CREATABLE,
 			'callback'            => [ $this, 'get_machine_translation_data' ],
+			'permission_callback' => [ self::class, 'has_logged_in_access' ],
+		] );
+
+		$this->add_route( '/machine_translation_languages', [
+			'methods'             => self::CREATABLE,
+			'callback'            => [ $this, 'get_machine_translation_languages' ],
 			'permission_callback' => [ self::class, 'has_logged_in_access' ],
 		] );
 
@@ -132,6 +139,18 @@ class Concierge extends RestEndpoint {
 		$data = [
 			'currency'    => $service->get_currency(),
 			'normalPrice' => $service->get_cost( $body['wordCount'] ?? 0 ),
+		];
+
+		return new WP_REST_Response( $data, 200 );
+	}
+
+	public function get_machine_translation_languages( WP_REST_Request $request ): WP_REST_Response {
+		if ( ! defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ) ) {
+			return new WP_REST_Response( [], 401 );
+		}
+
+		$data = [
+			'languages' => ( new Translator( BM_CONCIERGE_ML_TRANSLATION_API_KEY ) )->getTargetLanguages(),
 		];
 
 		return new WP_REST_Response( $data, 200 );

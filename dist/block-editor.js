@@ -427,53 +427,52 @@ function MachineTranslation() {
     formattedNormalPrice
   } = (0,_hooks_price__WEBPACK_IMPORTED_MODULE_4__.useMachineTranslationPrice)();
   const [targetLanguage, setTargetLanguage] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const {
+    supportedLanguages
+  } = (0,_hooks_price__WEBPACK_IMPORTED_MODULE_4__.useMachineTranslationLanguages)();
 
   const title = () => {
     if (formattedNormalPrice) {
-      return (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Machine Translation: %s', 'bm-concierge'), formattedNormalPrice);
+      return (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Machine Translation: %s", "bm-concierge"), formattedNormalPrice);
     }
 
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Machine Translation: ', 'bm-concierge'), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Spinner, null));
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Machine Translation: ", "bm-concierge"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Spinner, null));
   };
 
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.PanelBody, {
     title: title(),
     initialOpen: false
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Translate this page into a language of your choice instantly with our automated machine learning translation, powered by industry-leading DeepL.', 'bm-concierge')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Turnaround', 'bm-concierge'), ":"), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Immediately', 'bm-concierge')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Price', 'bm-concierge'), ":"), " ", formattedNormalPrice)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Translate this page into a language of your choice instantly with our automated machine learning translation, powered by industry-leading DeepL.", "bm-concierge")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Turnaround", "bm-concierge"), ":"), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Immediately", "bm-concierge")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Price", "bm-concierge"), ":"), " ", formattedNormalPrice)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
     variant: "secondary",
     isSecondary: true,
     onClick: openOrderModal
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Proceed to Order', 'bm-concierge')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_order_modal__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Machine Translation Concierge', 'bm-concierge'),
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Proceed to Order", "bm-concierge")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_order_modal__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Machine Translation Concierge", "bm-concierge"),
     isOpen: orderModalOpen,
     onClose: closeOrderModal,
     hasBeenSubmitted: orderSubmitted,
-    submitButtonText: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Send for Machine Translation', 'bm-concierge'),
+    submitButtonText: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Send for Machine Translation", "bm-concierge"),
     showRefreshAfterSubmit: true,
     onSubmit: () => {
       placeOrder({
-        type: 'machine_translation',
+        type: "machine_translation",
         price: formattedNormalPrice,
         targetLanguage
       });
     }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Translate this page into a language of your choice instantly with our automated machine learning translation, powered by industry-leading DeepL.', 'bm-concierge')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("When you order, your text will be translated right away. Machine translations are a great way to kickstart translations but do require a human touch afterwards.", 'bm-concierge')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Note: The contents of the current page will be replaced with the translation."))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Language', 'bm-concierge'),
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Translate this page into a language of your choice instantly with our automated machine learning translation, powered by industry-leading DeepL.", "bm-concierge")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("When you order, your text will be translated right away. Machine translations are a great way to kickstart translations but do require a human touch afterwards.", "bm-concierge")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Note: The contents of the current page will be replaced with the translation."))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Language", "bm-concierge"),
     onChange: value => setTargetLanguage(value),
     value: targetLanguage,
-    options: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('English (UK)'),
-      value: 'EN-GB'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('English (US)'),
-      value: 'EN-US'
-    }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Swedish'),
-      value: 'SV'
-    }]
+    options: supportedLanguages.map(language => {
+      return {
+        label: language.name,
+        value: language.code
+      };
+    })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", {
     className: "bm-concierge-divider"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Your Price:', 'bm-concierge'), " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, formattedNormalPrice))));
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Your Price:", "bm-concierge"), " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("strong", null, formattedNormalPrice))));
 }
 
 /***/ }),
@@ -707,7 +706,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "useAccessibilityPrice": function() { return /* binding */ useAccessibilityPrice; },
 /* harmony export */   "useProofreadingPrice": function() { return /* binding */ useProofreadingPrice; },
 /* harmony export */   "useLayoutPrice": function() { return /* binding */ useLayoutPrice; },
-/* harmony export */   "useMachineTranslationPrice": function() { return /* binding */ useMachineTranslationPrice; }
+/* harmony export */   "useMachineTranslationPrice": function() { return /* binding */ useMachineTranslationPrice; },
+/* harmony export */   "useMachineTranslationLanguages": function() { return /* binding */ useMachineTranslationLanguages; }
 /* harmony export */ });
 /* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
 /* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_0__);
@@ -727,7 +727,7 @@ const usePriceSelect = (type, data = {}) => {
 
     const {
       prices
-    } = select('bm/concierge').getPrices(type, data);
+    } = select("bm/concierge").getPrices(type, data);
     const {
       normal,
       express,
@@ -752,27 +752,42 @@ const usePriceSelect = (type, data = {}) => {
 };
 
 const useOnPagePrice = () => {
-  return usePriceSelect('onpage', {
+  return usePriceSelect("onpage", {
     wordCount: (0,_utilities_word_count__WEBPACK_IMPORTED_MODULE_2__.getWordCount)()
   });
 };
 const useAccessibilityPrice = () => {
-  return usePriceSelect('accessibility');
+  return usePriceSelect("accessibility");
 };
 const useProofreadingPrice = () => {
-  return usePriceSelect('proofreading', {
+  return usePriceSelect("proofreading", {
     wordCount: (0,_utilities_word_count__WEBPACK_IMPORTED_MODULE_2__.getWordCount)()
   });
 };
 const useLayoutPrice = () => {
-  return usePriceSelect('layout', {
+  return usePriceSelect("layout", {
     wordCount: (0,_utilities_word_count__WEBPACK_IMPORTED_MODULE_2__.getWordCount)()
   });
 };
 const useMachineTranslationPrice = () => {
-  return usePriceSelect('machine_translation', {
+  return usePriceSelect("machine_translation", {
     wordCount: (0,_utilities_word_count__WEBPACK_IMPORTED_MODULE_2__.getWordCount)()
   });
+};
+const useMachineTranslationLanguages = () => {
+  const {
+    supportedLanguages = []
+  } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_0__.useSelect)(select => {
+    const {
+      languages
+    } = select("bm/concierge").getLanguages();
+    return {
+      supportedLanguages: languages
+    };
+  }, []);
+  return {
+    supportedLanguages
+  };
 };
 
 /***/ }),
@@ -831,27 +846,28 @@ __webpack_require__.r(__webpack_exports__);
 
 const DEFAULT_STATE = {
   services: [],
-  prices: {}
+  prices: {},
+  languages: []
 };
 const actions = {
   *placeOrder(data) {
-    const response = yield actions.postToApi('/bm-concierge/v1/order', data);
+    const response = yield actions.postToApi("/bm-concierge/v1/order", data);
     return {
-      type: 'PLACE_ORDER',
+      type: "PLACE_ORDER",
       response
     };
   },
 
   setServices(services) {
     return {
-      type: 'SET_SERVICES',
+      type: "SET_SERVICES",
       services
     };
   },
 
   setPrices(service, express, normal, currency) {
     return {
-      type: 'SET_PRICES',
+      type: "SET_PRICES",
       service,
       express,
       normal,
@@ -859,36 +875,48 @@ const actions = {
     };
   },
 
+  setSupportedLanguages(languages) {
+    return {
+      type: "SET_SUPPORTED_LANGUAGES",
+      languages
+    };
+  },
+
   fetchFromApi(path) {
     return {
-      type: 'FETCH_FROM_API',
+      type: "FETCH_FROM_API",
       path
     };
   },
 
   postToApi(path, data) {
     return {
-      type: 'POST_TO_API',
+      type: "POST_TO_API",
       path,
       data
     };
   }
 
 };
-/* harmony default export */ __webpack_exports__["default"] = ((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.createReduxStore)('bm/concierge', {
+/* harmony default export */ __webpack_exports__["default"] = ((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.createReduxStore)("bm/concierge", {
   reducer(state = DEFAULT_STATE, action) {
     switch (action.type) {
-      case 'PLACE_ORDER':
+      case "PLACE_ORDER":
         return { ...state,
           data: action.data
         };
 
-      case 'SET_SERVICES':
+      case "SET_SERVICES":
         return { ...state,
           services: action.services
         };
 
-      case 'SET_PRICES':
+      case "SET_SUPPORTED_LANGUAGES":
+        return { ...state,
+          languages: action.languages
+        };
+
+      case "SET_PRICES":
         return { ...state,
           prices: { ...state.prices,
             [action.service]: {
@@ -921,6 +949,15 @@ const actions = {
       return {
         prices
       };
+    },
+
+    getLanguages(state) {
+      const {
+        languages
+      } = state;
+      return {
+        languages
+      };
     }
 
   },
@@ -934,7 +971,7 @@ const actions = {
     POST_TO_API(action) {
       return _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_0___default()({
         path: action.path,
-        method: 'POST',
+        method: "POST",
         data: action.data
       });
     }
@@ -942,7 +979,7 @@ const actions = {
   },
   resolvers: {
     *getPrices(type, data) {
-      const response = yield actions.postToApi('/bm-concierge/v1/' + type, data);
+      const response = yield actions.postToApi("/bm-concierge/v1/" + type, data);
       const {
         expressPrice,
         normalPrice,
@@ -951,8 +988,16 @@ const actions = {
       return actions.setPrices(type, expressPrice, normalPrice, currency);
     },
 
+    *getLanguages() {
+      const response = yield actions.postToApi("/bm-concierge/v1/machine_translation_languages");
+      const {
+        languages
+      } = response;
+      return actions.setSupportedLanguages(languages);
+    },
+
     *getServices() {
-      const services = yield actions.fetchFromApi('/bm-concierge/v1/services');
+      const services = yield actions.fetchFromApi("/bm-concierge/v1/services");
       return actions.setServices(services);
     }
 

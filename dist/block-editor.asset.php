@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('wp-api-fetch', 'wp-blocks', 'wp-components', 'wp-data', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins', 'wp-polyfill', 'wp-wordcount'), 'version' => '2a56233a7b071e8f33af9b4a8f3dde50');
+<?php return array('dependencies' => array('wp-api-fetch', 'wp-blocks', 'wp-components', 'wp-data', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins', 'wp-polyfill', 'wp-wordcount'), 'version' => 'f38018fbe86ba01ce4cfb33196ccae57');

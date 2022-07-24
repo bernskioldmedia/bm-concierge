@@ -68,7 +68,7 @@ class Concierge extends RestEndpoint {
 			'layout'              => apply_filters( 'bm/concierge/services/layout', true ),
 			'accessibility'       => apply_filters( 'bm/concierge/services/accessibility', true ),
 			'onpage'              => apply_filters( 'bm/concierge/services/onpage', true ),
-			'machine_translation' => apply_filters( 'bm/concierge/services/machine_translation', true ),
+			'machine_translation' => apply_filters( 'bm/concierge/services/machine_translation', true ) && defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ),
 		];
 
 		return new WP_REST_Response( $data, 200 );

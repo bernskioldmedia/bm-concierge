@@ -15,8 +15,8 @@ defined( 'ABSPATH' ) || exit;
 
 class Concierge extends RestEndpoint {
 
-	protected        $namespace = 'bm-concierge';
-	protected string $version   = '1';
+	protected $namespace = 'bm-concierge';
+	protected string $version = '1';
 
 	protected function setup_routes(): void {
 		$this->add_route( '/services', [

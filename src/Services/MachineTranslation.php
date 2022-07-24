@@ -27,6 +27,7 @@ class MachineTranslation extends BaseService {
 	public function get_translated_data( int $post_id, string $targetLanguage ): array {
 		$api_key = defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ) ? BM_CONCIERGE_ML_TRANSLATION_API_KEY : null;
 
+
 		if ( ! $api_key ) {
 			return [
 				'title'   => null,
@@ -34,18 +35,17 @@ class MachineTranslation extends BaseService {
 			];
 		}
 
-		$post = get_post( $post_id );
+		$translator = new \DeepL\Translator( $api_key );
+		$post       = get_post( $post_id );
 
-		$response = wp_remote_post( 'https://api-free.deepl.com/v2/translate', [
-			'body' => "auth_key=$api_key&text=$post->post_title&text=$post->post_content&target_lang=$targetLanguage",
-		] );
-
-		$body = wp_remote_retrieve_body( $response );
-		$data = json_decode( $body );
+		$options = [
+			'tag_handling'    => 'html',
+			'split_sentences' => 'nonewlines',
+		];
 
 		return [
-			'title'   => $data->translations[0]->text,
-			'content' => $data->translations[1]->text,
+			'title'   => $translator->translateText( $post->post_title, 'EN', 'SV', $options ),
+			'content' => $translator->translateText( $post->post_content, 'EN', 'SV', $options ),
 		];
 	}
 

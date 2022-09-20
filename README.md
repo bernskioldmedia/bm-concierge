@@ -46,6 +46,7 @@ All services are enabled by default. To disable a service, return its filter as 
 - Layout: `bm/concierge/services/layout`
 - Accessibility: `bm/concierge/services/accessibility`
 - On-Page SEO: `bm/concierge/services/onpage`
+- Machine Translation: `bm/concierge/services/machine_translation`
 
 This could be used to either disable a service completely, or selectively based on rules:
 

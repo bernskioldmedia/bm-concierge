@@ -9,11 +9,11 @@ to any of our WordPress customers' websites.
 - On-Page SEO Optimization
 - Accessibility Audit
 - Page Layout
+- Translation (Machine-Learning)
 
 Coming soon:
 
 - Translation (Agency)
-- Translation (Machine-Learning)
 
 ## Hooks
 

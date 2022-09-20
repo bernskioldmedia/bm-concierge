@@ -3,7 +3,10 @@
   "description": "Our help at your fingertips. BM Concierge lets you easily access content and assistive service for your site, right from the dashboard.",
   "type": "wordpress-plugin",
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+		"allow-plugins": {
+   		"composer/installers": true
+    }
   },
   "prefer-stable": true,
   "minimum-stability": "dev",

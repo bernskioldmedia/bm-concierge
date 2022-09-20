@@ -4,9 +4,11 @@ namespace BernskioldMedia\WP\Concierge\Rest;
 
 use BernskioldMedia\WP\Concierge\Services\AccessibilityReview;
 use BernskioldMedia\WP\Concierge\Services\Layout;
+use BernskioldMedia\WP\Concierge\Services\MachineTranslation;
 use BernskioldMedia\WP\Concierge\Services\OnPageOptimization;
 use BernskioldMedia\WP\Concierge\Services\Proofreading;
 use BernskioldMedia\WP\PluginBase\Rest\RestEndpoint;
+use DeepL\Translator;
 use WP_REST_Request;
 use WP_REST_Response;
 
@@ -14,8 +16,8 @@ defined( 'ABSPATH' ) || exit;
 
 class Concierge extends RestEndpoint {
 
-	protected        $namespace = 'bm-concierge';
-	protected string $version   = '1';
+	protected $namespace = 'bm-concierge';
+	protected string $version = '1';
 
 	protected function setup_routes(): void {
 		$this->add_route( '/services', [
@@ -48,6 +50,18 @@ class Concierge extends RestEndpoint {
 			'permission_callback' => [ self::class, 'has_logged_in_access' ],
 		] );
 
+		$this->add_route( '/machine_translation', [
+			'methods'             => self::CREATABLE,
+			'callback'            => [ $this, 'get_machine_translation_data' ],
+			'permission_callback' => [ self::class, 'has_logged_in_access' ],
+		] );
+
+		$this->add_route( '/machine_translation_languages', [
+			'methods'             => self::CREATABLE,
+			'callback'            => [ $this, 'get_machine_translation_languages' ],
+			'permission_callback' => [ self::class, 'has_logged_in_access' ],
+		] );
+
 		$this->add_route( '/order', [
 			'methods'             => self::CREATABLE,
 			'callback'            => [ $this, 'process_order' ],
@@ -57,10 +71,11 @@ class Concierge extends RestEndpoint {
 
 	public function get_enabled_services(): WP_REST_Response {
 		$data = [
-			'proofreading'  => apply_filters( 'bm/concierge/services/proofreading', true ),
-			'layout'        => apply_filters( 'bm/concierge/services/layout', true ),
-			'accessibility' => apply_filters( 'bm/concierge/services/accessibility', true ),
-			'onpage'        => apply_filters( 'bm/concierge/services/onpage', true ),
+			'proofreading'        => apply_filters( 'bm/concierge/services/proofreading', true ),
+			'layout'              => apply_filters( 'bm/concierge/services/layout', true ),
+			'accessibility'       => apply_filters( 'bm/concierge/services/accessibility', true ),
+			'onpage'              => apply_filters( 'bm/concierge/services/onpage', true ),
+			'machine_translation' => apply_filters( 'bm/concierge/services/machine_translation', true ) && defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ),
 		];
 
 		return new WP_REST_Response( $data, 200 );
@@ -117,6 +132,30 @@ class Concierge extends RestEndpoint {
 		return new WP_REST_Response( $data, 200 );
 	}
 
+	public function get_machine_translation_data( WP_REST_Request $request ): WP_REST_Response {
+		$body    = $request->get_json_params();
+		$service = new MachineTranslation();
+
+		$data = [
+			'currency'    => $service->get_currency(),
+			'normalPrice' => $service->get_cost( $body['wordCount'] ?? 0 ),
+		];
+
+		return new WP_REST_Response( $data, 200 );
+	}
+
+	public function get_machine_translation_languages( WP_REST_Request $request ): WP_REST_Response {
+		if ( ! defined( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY' ) ) {
+			return new WP_REST_Response( [], 401 );
+		}
+
+		$data = [
+			'languages' => ( new Translator( BM_CONCIERGE_ML_TRANSLATION_API_KEY ) )->getTargetLanguages(),
+		];
+
+		return new WP_REST_Response( $data, 200 );
+	}
+
 	public static function has_logged_in_access(): bool {
 		return is_user_logged_in();
 	}
@@ -139,6 +178,10 @@ class Concierge extends RestEndpoint {
 
 			case 'layout':
 				$service = new Layout();
+				break;
+
+			case 'machine_translation':
+				$service = new MachineTranslation();
 				break;
 
 			default:

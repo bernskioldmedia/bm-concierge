@@ -83,3 +83,13 @@ apply_filters('bm/concierge/currency', function( string $currency, string $servi
 	return 'SEK';
 });
 ```
+
+### Adding the machine learning API key
+
+In order for the machine learning service to work an API key needs to be set in the environment configuration.
+
+```php
+define( 'BM_CONCIERGE_ML_TRANSLATION_API_KEY', 'XXXXXX' );
+```
+
+For Bernskiold Media projects we store this in our central management system which we generate for all clients. Alternatively you can sign up to [get your own API key with DeepL](https://www.deepl.com/pro-api).

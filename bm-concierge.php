@@ -45,3 +45,13 @@ function bm_concierge() {
 }
 
 bm_concierge();
+
+/**
+ * Run update checker if not disabled.
+ */
+if ( ! defined( 'BM_CONCIERGE_DISABLE_UPDATER' ) || ( defined( 'BM_CONCIERGE_DISABLE_UPDATER' ) && false === BM_CONCIERGE_DISABLE_UPDATER ) ) {
+	require_once bm_concierge()::get_path( 'lib/plugin-update-checker/plugin-update-checker.php' );
+
+	$updater = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bernskioldmedia/bm-concierge', __FILE__, 'bm-concierge' );
+	$updater->getVcsApi()->enableReleaseAssets();
+}

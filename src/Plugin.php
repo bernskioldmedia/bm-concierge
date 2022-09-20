@@ -22,7 +22,3 @@ class Plugin extends BasePlugin {
 		Rest\Concierge::class,
 	];
 }
-
-require Plugin::get_path( 'lib/plugin-update-checker/plugin-update-checker.php' );
-
-Puc_v4_Factory::buildUpdateChecker( 'https://github.com/bernskioldmedia/bm-concierge/', __FILE__, 'bm-concierge' )->setBranch( 'master' );

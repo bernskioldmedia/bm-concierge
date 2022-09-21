@@ -6,7 +6,7 @@
   "main": "assets/scripts/src/index.js",
   "scripts": {
     "test": "phpunit",
-    "release": "npm install && composer install --no-dev -o && npm run build && composer build",
+    "release": "npm install && composer install --no-dev -o && npm run build",
     "setup": "npm install && composer install && npm run build",
     "build": "wp-scripts build",
     "dev": "wp-scripts start",
